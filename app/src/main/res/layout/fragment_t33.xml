@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="【功能说明】
+实现主页面退出按钮防碰撞。
+【要求】
+1、主界面右下角显示本机IP地址和24小时格式的时间（时间格式如 ：2017-4/21 16:59-33）。
+2、主页面防误碰操作 ：当点击一次 back 键时，程序提示“再按一次退出程序 ”，当点击两次 back 键，两次之间的时间小于 3s 时，App 就退出。
+3、加入闪屏页淡入3秒，中间停留三秒钟，然后淡出。"
+        android:textSize="30sp"/>
+</LinearLayout>

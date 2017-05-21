@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="150dp"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="室外空气指数"
+
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PM2.5："
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/travel_advice_pm"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温　度："
+        android:layout_marginTop="10dp"
+        android:id="@+id/travel_advice_wendu"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="湿　度："
+        android:layout_marginTop="10dp"
+        android:id="@+id/travel_advice_shidu"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/travel_advice_advice"
+        android:text="建　议："
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

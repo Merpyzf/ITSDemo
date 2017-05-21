@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1号道路：顺畅"
+        android:id="@+id/road_query_1"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/road_query_switch_1"
+            android:layout_weight="1"
+            android:text="1号小车"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2号道路：顺畅"
+        android:id="@+id/road_query_2"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/road_query_switch_2"
+        android:text="2号小车"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3号道路：顺畅"
+        android:id="@+id/road_query_3"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/road_query_switch_3"
+        android:layout_weight="1"
+        android:text="3号小车"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+</LinearLayout>

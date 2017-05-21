@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/item_road_status_name"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text=""
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/item_road_status_crowd"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text=""
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/item_road_status_color"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="查询"
+            android:id="@+id/car_get_money"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="车号："
+            android:id="@+id/car_money_number"
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <SeekBar
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:max="15"
+            android:id="@+id/car_money_seek_bar"
+            />
+        
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:id="@+id/car_money_value_show"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:text="最大："
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/car_money_max"
+            android:inputType="number"
+            android:text="20"
+            android:singleLine="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:text="最小："
+            android:gravity="center"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/car_money_min"
+            android:inputType="number"
+            android:text="20"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/car_set_money_value"
+        android:text="设置账户阀值"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/car_money_start"
+        android:text="开始监控"
+        />
+
+
+</LinearLayout>

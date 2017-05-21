@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:text="【功能说明】
+当各传感器的当前值达到了设置的警告阈值时，系统将在第一时间将警告消息推送到客户端的通知栏内，以便于管理人员及时处理。
+注：同一类型的警告在连续时间周期内仅发送一条警告推送消息。
+【要求】
+1、当出现任一类型的传感器阈值警告时，客户端的通知栏在不超过10秒的时间内必须收到对应的传感器警告消息。
+2、警告信息的内容至少包含：警告对象、警告类型、警告发生时间、当前值、阈值。
+3、点击某一通知消息时，可以自动进入实时环境指标界面。
+4、当某一类型传感器告警恢复正常时，客户端通知栏内的消息自动消除。
+见第二题"
+        android:textSize="30sp"/>
+</LinearLayout>

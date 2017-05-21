@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/account_recharge_car_id"
+            android:textSize="20sp"
+            android:text="1"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/account_recharge_car_query"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/account_recharge_car_account_show"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/account_recharge_car_money"
+            android:textSize="20sp"
+            android:hint="充值金额"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/account_recharge_start"
+            android:text="充值"
+            />
+    </LinearLayout>
+
+</LinearLayout>

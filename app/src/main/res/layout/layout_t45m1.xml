@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/ll_bg1"
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_car1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50dp"
+                    android:layout_margin="50sp"
+                    android:text="一号小车"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="50sp"
+                    android:text="正常"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+
+                <TextView
+
+                    android:id="@+id/tv_values_1"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle"
+                    android:textColor="#000000"
+                    android:textSize="60sp"
+                    android:text=""
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bg2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_car2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50dp"
+                    android:layout_margin="50sp"
+                    android:text="二号小车"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="50sp"
+                    android:text="正常"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_values_2"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle"
+                    android:textColor="#000000"
+                    android:textSize="60sp"
+                    android:text=""
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/ll_bg3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_car3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50dp"
+                    android:layout_margin="50sp"
+                    android:text="三号小车"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="50sp"
+                    android:text="正常"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_values_3"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle"
+                    android:textColor="#000000"
+                    android:textSize="60sp"
+                    android:text=""
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bg4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_margin="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tv_car_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50dp"
+                    android:layout_margin="50sp"
+                    android:text="四号小车"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:textSize="50sp"
+                    android:text="正常"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_values_4"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle"
+                    android:textColor="#000000"
+                    android:textSize="60sp"
+                    android:text=""
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
