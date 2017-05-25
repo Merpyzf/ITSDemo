@@ -48,6 +48,7 @@ import com.example.administrator.itsdemo.fragment.T43Fragment;
 import com.example.administrator.itsdemo.fragment.T44Fragment;
 import com.example.administrator.itsdemo.fragment.T45Fragment;
 import com.example.administrator.itsdemo.fragment.T47Fragment;
+import com.example.administrator.itsdemo.fragment.T48Fragment;
 import com.example.administrator.itsdemo.fragment.TrafficControlFragment;
 import com.example.administrator.itsdemo.fragment.TravelAdviceFragment;
 import com.example.administrator.itsdemo.utils.HttpAsyncUtils;
@@ -62,8 +63,7 @@ import java.util.TimerTask;
 
 import static com.example.administrator.itsdemo.R.id.index_sliding;
 
-public class MainActivity extends FragmentActivity
-{
+public class MainActivity extends FragmentActivity {
 
     private TextView tv_title;
 
@@ -90,8 +90,7 @@ public class MainActivity extends FragmentActivity
     private String hostIp;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -105,29 +104,23 @@ public class MainActivity extends FragmentActivity
 
         Log.i("wk", "网络连接是否可用==》" + netWorkAvailable);
 
-        new HttpAsyncUtils(Common.SET_CAR_MOVE, "{\"CarId\":1, \"CarAction\":\"Stop\"}")
-        {
+        new HttpAsyncUtils(Common.SET_CAR_MOVE, "{\"CarId\":1, \"CarAction\":\"Stop\"}") {
             @Override
-            public void success(String data)
-            {
+            public void success(String data) {
                 Log.i(TAG, "success: " + data);
             }
 
             @Override
-            public void error()
-            {
+            public void error() {
                 Log.i(TAG, "success: error");
             }
         };
 
     }
 
-    private void iniEvent()
-    {
-        if(getIntent().getStringExtra("page") != null)
-        {
-            switch (getIntent().getStringExtra("page"))
-            {
+    private void iniEvent() {
+        if (getIntent().getStringExtra("page") != null) {
+            switch (getIntent().getStringExtra("page")) {
                 case "t31":
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.frameLayout_index, new QueryCarBalanceFragment())
@@ -145,17 +138,12 @@ public class MainActivity extends FragmentActivity
         hostIp = WangkeUtils.getIpAddress();
         handler.post(runnable);
 
-        tv_title.setOnClickListener(new View.OnClickListener()
-        {
+        tv_title.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
-                if (slidingPane.isOpen())
-                {
+            public void onClick(View v) {
+                if (slidingPane.isOpen()) {
                     slidingPane.closePane();
-                }
-                else
-                {
+                } else {
                     slidingPane.openPane();
                 }
             }
@@ -167,13 +155,10 @@ public class MainActivity extends FragmentActivity
                 new int[]{R.id.item_menu_image, R.id.item_menu_text});
         listview.setAdapter(adapter);
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
-            {
-                switch (name[position])
-                {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (name[position]) {
                     case "1-系统的启动导航功能":
                         getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.frameLayout_index, new GuideFragment())
@@ -398,6 +383,17 @@ public class MainActivity extends FragmentActivity
                                 .replace(R.id.frameLayout_index, new T47Fragment())
                                 .commit();
                         break;
+
+                    case "48-折线图动态刷新":
+
+                        getSupportFragmentManager().beginTransaction()
+                                .replace(R.id.frameLayout_index, new T48Fragment())
+                                .commit();
+
+
+                        break;
+
+
                 }
 
                 slidingPane.closePane();
@@ -405,41 +401,38 @@ public class MainActivity extends FragmentActivity
         });
     }
 
-    private void iniUI()
-    {
+    private void iniUI() {
         tv_title = (TextView) findViewById(R.id.tv_title);
         slidingPane = (SlidingPaneLayout) findViewById(index_sliding);
         listview = (ListView) findViewById(R.id.list_menu);
         ip = (TextView) findViewById(R.id.main_tv_ip);
     }
 
-    private ArrayList<HashMap<String, Object>> getData()
-    {
+    private ArrayList<HashMap<String, Object>> getData() {
         ArrayList<HashMap<String, Object>> list = new ArrayList<>();
 
-        name = new String[]{"1-系统的启动导航功能","2,3-实时环境指标动态显示", "4-充值历史记录",
+        name = new String[]{"1-系统的启动导航功能", "2,3-实时环境指标动态显示", "4-充值历史记录",
                 "5-传感器数据历史记录", "6-设置账户阈值",
                 "7-设置速度阈值", "8-小车账户充值",
                 "9-公交车信息查询", "10-道路状况查询",
                 "11-停车日志查询", "12-路灯管理控制",
                 "13-车辆管理控制", "14-光照监测",
                 "15-半透明DIALOG", "18-路况查询",
-                "21-出行建议","22-更改路灯时长",
-                "23-公交查询","24-停车记录",
+                "21-出行建议", "22-更改路灯时长",
+                "23-公交查询", "24-停车记录",
                 "25-账户支付安全", "26-车辆限行",
-                "27-通知打开路灯","28-交通灯指示灯排序",
+                "27-通知打开路灯", "28-交通灯指示灯排序",
                 "29-用户登陆", "31-小车余额查询", "32-小车充值",
                 "33-主页面退出按钮防碰撞", "34-小车充值和余额查询",
                 "35-客户端警告消息推送", "36-实现路灯控制功能",
                 "37-实现车载人数统计功能", "38-道路状态功能",
-                "39-系统主界面布局1","40-系统主界面布局2",
-                "42-编码实现服务器地址设置和国际化","43-实现主界面的功能",
+                "39-系统主界面布局1", "40-系统主界面布局2",
+                "42-编码实现服务器地址设置和国际化", "43-实现主界面的功能",
                 "44-检查网络状态", "45-我的座驾功能", "47-路灯管理"};
 
         image = new int[]{R.mipmap.btn_l_slideshow};
 
-        for (int i = 0; i < name.length; i++)
-        {
+        for (int i = 0; i < name.length; i++) {
             HashMap<String, Object> map = new HashMap<>();
             map.put("menu_image", R.mipmap.btn_l_slideshow);
             map.put("menu_content", name[i]);
@@ -452,37 +445,28 @@ public class MainActivity extends FragmentActivity
 
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK)
-        {
-            if (isExit)
-            {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (event.getKeyCode() == KeyEvent.KEYCODE_BACK) {
+            if (isExit) {
                 Toast.makeText(mContext, "再按一次退出系统", Toast.LENGTH_SHORT).show();
                 isExit = false;
 
-                new Timer().schedule(new TimerTask()
-                {
+                new Timer().schedule(new TimerTask() {
                     @Override
-                    public void run()
-                    {
+                    public void run() {
                         isExit = true;
                     }
                 }, 3000);
-            }
-            else
-            {
+            } else {
                 finish();
             }
         }
         return true;
     }
 
-    private Runnable runnable = new Runnable()
-    {
+    private Runnable runnable = new Runnable() {
         @Override
-        public void run()
-        {
+        public void run() {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM/dd HH:mm-ss");
             String time = format.format(new Date());
             ip.setText("ip:" + hostIp + "\n" + time);
